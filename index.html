@@ -1,0 +1,10 @@
+<script>
+  fetch('https://api.ipify.org?format=json')
+    .then(response => response.json())
+    .then(data => {
+      navigator.userAgent
+      document.body.innerHTML = `айпи: ${data.ip} юзер агент: ${navigator.userAgent}`;
+      
+
+    });
+</script>
